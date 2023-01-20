@@ -13,8 +13,7 @@ lifeChart = images.create_image("""
 . . . . .
 """)
 
-#state = [ False for i in range(1, 25)]
-state = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ]
+state = [ False for i in range(25)]
 
 def getState(arr: list[bool], x: int, y: int) -> bool:
     return arr[x * 5 + y]
