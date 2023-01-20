@@ -8,8 +8,8 @@ let lifeChart = images.createImage(`
 . . . . .
 . . . . .
 `)
-// state = [ False for i in range(1, 25)]
-let state = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+
+let state = [false | _ <- [0..25]]
 function getState(arr: any, x: number, y: number): boolean {
     return arr[x * 5 + y]
 }
